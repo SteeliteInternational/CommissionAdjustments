@@ -7,270 +7,123 @@ and open the template in the editor.
 <html>
     
 <head>
-     
-    <title>Commission Adjustments</title>
-
-     <center><b><i>Commission Adjustments</i></b></center>
+         <meta charset="UTF-8">
+         <title> Commission Adjustments </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#157878">
+     <Center><b>Commission Adjustments</b></center>
             <br/>
+            <link href="Style.css" rel="stylesheet" type="text/css"/>
+          
+            <link href="Theme.css" rel="stylesheet" type="text/css"/>
+            
 </head>
 
 <body>
     
-<form>  
-    
- 
-<div class="control-group">
-    <label for="EffectiveDate" class="control-label">Effective Date of Change:</label>
-
-
-
-<select name=month value=''>Select Month</option>
-<option value='01'>January</option>
-<option value='02'>February</option>
-<option value='03'>March</option>
-<option value='04'>April</option>
-<option value='05'>May</option>
-<option value='06'>June</option>
-<option value='07'>July</option>
-<option value='08'>August</option>
-<option value='09'>September</option>
-<option value='10'>October</option>
-<option value='11'>November</option>
-<option value='12'>December</option>
-</select>
-
-
-
-</td><td  align=left  >   
-
-Day <select name=dt >
-
-<option value='01'>01</option>
-<option value='02'>02</option>
-<option value='03'>03</option>
-<option value='04'>04</option>
-<option value='05'>05</option>
-<option value='06'>06</option>
-<option value='07'>07</option>
-<option value='08'>08</option>
-<option value='09'>09</option>
-<option value='10'>10</option>
-<option value='11'>11</option>
-<option value='12'>12</option>
-<option value='13'>13</option>
-<option value='14'>14</option>
-<option value='15'>15</option>
-<option value='16'>16</option>
-<option value='17'>17</option>
-<option value='18'>18</option>
-<option value='19'>19</option>
-<option value='20'>20</option>
-<option value='21'>21</option>
-<option value='22'>22</option>
-<option value='23'>23</option>
-<option value='24'>24</option>
-<option value='25'>25</option>
-<option value='26'>26</option>
-<option value='27'>27</option>
-<option value='28'>28</option>
-<option value='29'>29</option>
-<option value='30'>30</option>
-<option value='31'>31</option>
-</select>
-
-
-</td><td  align=left  >   
-Year(YYYY)<input type=text name=year size=4 value="">
-<!-- <input type=submit value=Submit> -->
-</table>
-                    </div>
-                    
-                    
-
-                    <div class="control-group">
-                        <label for="Customer" class="control-label">Customer(End User):</label>
-
-                       
-                            <input type="text" id="customer" name="Customer" value=""/>
-                            <span class="help-inline"></span>
-                       
-                    </div>
-                    
-                    
-                    
-
-                    <div class="control-group">
-                        <label for="Distributor" class="control-label">Distributor</label>
-
-    
-                            <input type="text" id="Distributor" name="Distributor" value=""/>
-                            <span class="help-inline"></span>
-                            
-                             <label for="DistributorPO" class="control-label">Distributor PO#:</label>
-
-    
-                            <input type="text" id="DistributorPO" name="DistributorPO" value=""/>
-                            <span class="help-inline"></span>
-                      
-                    </div>
-                    
-                    
-
-                    <div class="control-group">
-                        <label for="CurrentTerritory" class="control-label">Current Territory:</label>
-
-                       
-                            <input type="text" id="CurrentTerritory" name="CurrentTerritory" value=""/>
-                            <span class="help-inline"></span>
-                     
-                    </div>
-
-                    
-                    <div class="control-group">
-                        <label for="NewTerritory" class="control-label">New Territory:</label>
-
-                        
-                            <input type="text" id="NewTerritory" name="NewTerritory" value=""/>
-                       
-                    </div>
+        <section class="page-header">
+      <h1 class="project-name">Commission Adjustments</h1>
+     
+    </section>
     
     
-    
-    
+     
+<form id="gform" id="gform" enctype="text/plain" 
+      action="https://docs.google.com/forms/d/e/1FAIpQLSe2RHWA00FdnU7w2SGBpDzmzWZkelPu4_KuBZfHsejIDxJXwQ/viewform?entry.431624879&entry.309097280&entry.564208416&entry.535191450&entry.1062983704&entry.518243018&entry.662931690&entry.1555602504&entry.340298994=JDK&entry.637685888"
+target="hidden_iframe" onsubmit="submitted=true;">
 
- 
 
-   
-     <div class="control-group">
-          Revision Type:
-         <select name="RevisionType" id="RevisionType">
-             <option>Permanent Revision</option>
+
+  
+    <p><label for="Name">Your Name:</label>
+  <input id="entry.431624879" name="entry.431624879" type="text" value=""/>
+      
+
+    
+  <p><label for="EffectiveDate">Effective Date of Change:</label>
+  <input id="entry.309097280" name="entry.309097280" type="date" value=""/></p>
+
+  <p><label for="Customer">Customer(End User):</label>
+  <input id="entry.564208416" name="entry.564208416" type="text" value=""/></p>
+  
+  
+   <p><label for="Distributor">Distributor:</label>
+  <input id="entry.535191450" name="entry.535191450" type="text" value=""/>
+  
+  
+   <label for="DistributorPO">Distributor PO#:</label>
+  <input id="entry.1062983704" name="entry.1062983704" type="text" value=""/>
+   </p>
+  
+  
+    <p><label for="CurrentTerritory">Current Territory:</label>
+  <input id="entry.518243018" name="entry.518243018" type="text" value=""/></p>
+  
+  
+  <p><label for="NewTerritory">New Territory:</label>
+  <input id="entry.662931690" name="entry.662931690" type="text" value=""/></p>
+
+  
+  
+    <p><label for="RevisionType">Revision Type:</label>
+  <select name="entry.96543865" id="entry.96543865">
+      <option>Permanent Revision</option>
              <option>One time Only Revision</option>
-         </select>
-         
-         
-         </div>
+  </select></p>
 
-    
-<script>
+        
+        
+  <p><label for="Explanation">Explanation:</label></p>
+  <p> <textarea name="entry.1555602504" id="entry.1555602504" rows="4" cols="84">
+
+      </textarea></p>
+        
+        
   
-    
+  <p><label for="Approver">Approved By:</label>
+  <input id="Approver" name="Approver" type="text" disabled="disabled" value="JDM"/></p>
 
 
- </script>                       
-
-
-
-                       </div>
-    
-    
-    
-    
-    
-    
-    Explanation:
-    <div class="control-group">
-    <textarea name="Explanation" rows="3" cols="100" id="Explanation">
-    </textarea>
-    </div>
-           
-    Approved by     (Regional/VP) </br>
-    <input type="text" name="JDM" value="JDM" size="20" readonly="readonly" />
-    </br>
-    Name
-    
-    
-    <div class="control-group">
-                        <label for="TodayDate" class="control-label">Date:</label>
-
-
-
-<select name=tdmonth value=''>Select Month</option>
-<option value='01'>January</option>
-<option value='02'>February</option>
-<option value='03'>March</option>
-<option value='04'>April</option>
-<option value='05'>May</option>
-<option value='06'>June</option>
-<option value='07'>July</option>
-<option value='08'>August</option>
-<option value='09'>September</option>
-<option value='10'>October</option>
-<option value='11'>November</option>
-<option value='12'>December</option>
-</select>
-
-
-
-</td><td  align=left  >   
-
-Day <select name=daydt >
-
-<option value='01'>01</option>
-<option value='02'>02</option>
-<option value='03'>03</option>
-<option value='04'>04</option>
-<option value='05'>05</option>
-<option value='06'>06</option>
-<option value='07'>07</option>
-<option value='08'>08</option>
-<option value='09'>09</option>
-<option value='10'>10</option>
-<option value='11'>11</option>
-<option value='12'>12</option>
-<option value='13'>13</option>
-<option value='14'>14</option>
-<option value='15'>15</option>
-<option value='16'>16</option>
-<option value='17'>17</option>
-<option value='18'>18</option>
-<option value='19'>19</option>
-<option value='20'>20</option>
-<option value='21'>21</option>
-<option value='22'>22</option>
-<option value='23'>23</option>
-<option value='24'>24</option>
-<option value='25'>25</option>
-<option value='26'>26</option>
-<option value='27'>27</option>
-<option value='28'>28</option>
-<option value='29'>29</option>
-<option value='30'>30</option>
-<option value='31'>31</option>
-</select>
-
-
-</td><td  align=left  >   
-Year(YYYY)<input type=text name=tdyear size=4 value="">
-<!-- <input type=submit value=Submit> -->
-</table>
-                    </div>
-    
-    </br>
-    
-    <div>
-    
- 
-    <a class="mailto" href="mailto:kbrogley@steeliteusa.com"> Submit </a>
   
-    
+      
+  <p><label for="TodayDate">Today's Date:</label>
+  <input id="entry.637685888" name="entry.637685888" type="date" value=""/></p>
 
-<textarea id="myText">
-    Lorem ipsum...
-</textarea>
-<button onclick="sendMail(); return false">Send</button>
-
-
+  
+  
 
 
-            </div>
-            
+  <input type="submit"  value="Submit">
 
-    
-    
+
+
+<!--
+ <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
+-->
+
+
+
             </form>
     
-                            <script src="Main.js" type="text/javascript"></script>
+<iframe src="#" id="hidden_iframe" name="hidden_iframe" style="visibility:hidden"></iframe>
+    
+<script src="assets/js/jquery.min.js"></script>
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript"> var submitted=false;</script>
+<script type="text/javascript">
+$('#gform').on('submit', function(e) {
+  $('#gform *').fadeOut(2000);
+  $('#gform').prepend('Your submission has been processed...');
+  });
+</script>
+  
+
+</body>
+</html>
+    
+    
+
+                
 
                    </body>
                    </html>
