@@ -121,6 +121,13 @@ $('#gform').on('submit', function(e) {
   $('#gform *').fadeOut(2000);
   $('#gform').prepend('Your submission has been processed...');
   });
+    
+     $('input[type=date]').datepicker({
+            // specify the same format as the spec
+            dateFormat: 'yy-mm-dd'
+        });
+    
+    
 </script>
   
 
