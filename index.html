@@ -158,7 +158,7 @@ target="hidden_iframe" onsubmit="submitted=true;">
   
 
 
-  <input type="submit"  value="Submit"  onclick="myfunction();"> 
+  <input type="submit"  value="Submit"  > 
 
   <center><p><img src="http://us.steelite.com/skin/frontend/default/steelite/images/footer_logo.png" height="200px" width="200px" border="1px"></p></center>
 
@@ -182,6 +182,12 @@ target="hidden_iframe" onsubmit="submitted=true;">
 $('#gform').on('submit', function(e) {
 //$('#gform *').fadeout(2000);
 //$('#gform')[0].reset();
+$(document).ready(function(){
+  $('div').click(function(){
+   alert("Hello.....");
+  });
+});
+
 $('#gform').hide();
   $('#gform').prepend('Your submission has been processed...');
 //$('#gform')[0].reset();
@@ -191,9 +197,7 @@ $('#gform').hide();
  });
   
   
-  myfunction (){
-          $('#gform').hide();
-      }
+
   
 </script>
   
