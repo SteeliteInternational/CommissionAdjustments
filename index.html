@@ -14,7 +14,8 @@ and open the template in the editor.
     <meta name="theme-color" content="#157878">
      <Center><b>Commission Adjustments</b></center>
             <br/>
-
+       <link href="Style.css" rel="stylesheet" type="text/css"/>
+           
           
             
             
@@ -155,10 +156,10 @@ target="hidden_iframe" onsubmit="submitted=true;">
   
   <div>
   
-  <input type="submit"  value="Submit"  > 
 
 
-  
+
+  <button id="myBtn">Submit</button>
 
   
 
@@ -177,24 +178,17 @@ target="hidden_iframe" onsubmit="submitted=true;">
     
 <iframe src="#" id="hidden_iframe" name="hidden_iframe" style="visibility:hidden"></iframe>
     
-
 <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 <script type="text/javascript"> var submitted=false;</script>
 <script type="text/javascript">
-$('#gform').on('submit', function(e) {
-// $('#gform *').fadeOut(20);
-$('#gform').hide();
-// $('#gform').prepend('Your submission has been processed...');
-//$('#gform')[0].reset();
-  
-  
-  
- });
-  
 
-  
-</script>
-  
+document.getElementById("myBtn").onclick = hide;
+
+function hide() {
+    $('#gform').hide();
+}
+ 
+ </script>
 
 
 
