@@ -15,7 +15,7 @@ and open the template in the editor.
      <Center><b>Commission Adjustments</b></center>
             <br/>
             <link href="Style.css" rel="stylesheet" type="text/css"/>
-           
+          
           
             
             
@@ -156,12 +156,9 @@ target="hidden_iframe" onsubmit="submitted=true;">
   
   <div>
   
-  <input type="submit"  value="Submit"  > 
 
 
-  
-
-  
+  <input type="submit"  value="Submit"  onclick="myFunction();"> 
 
   <center><p><img src="http://us.steelite.com/skin/frontend/default/steelite/images/footer_logo.png" height="200px" width="200px" border="1px"></p></center>
 
@@ -182,28 +179,41 @@ target="hidden_iframe" onsubmit="submitted=true;">
 <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 <script type="text/javascript"> var submitted=false;</script>
 <script type="text/javascript">
-$('#gform').on('submit', function(e) {
-
-// $('#gform *').fadeOut(20);
-$('#gform').hide();
-// $('#gform').prepend('Your submission has been processed...');
-//$('#gform')[0].reset();
+//$('#gform').on('submit', function(e) {
+//$('#gform').hide();
+  // $('#gform').prepend('Your submission has been processed...');
   
   
   
- });
   
-  $('#submit').css('cursor','pointer');
-$(document).on('click', '#submit',  function(event) {
-    event.preventDefault()
-    alert('submit');
-});
 
 
+function myFunction() {
+   var form = document.getElementsByTagName('form')[0];
+    $('#gform').addEventListener('submit', $('#gform').hide());
+
+}
+
+
+//fuction accept() {
+   //  $('#gform').addEventListener('submit', calcRoute(e));
+//}
+
+(function() {
+   var form = document.getElementsByTagName('form')[0];
+    
+    // form.addEventListener('submit', calcRoute);
+    $('#gform').addEventListener('submit', hide());
+    // $('#gform').addEventListener('submit', Reset(););
+    
+    
+ }());
+
+
+ 
   
 </script>
   
-
 
 
 
