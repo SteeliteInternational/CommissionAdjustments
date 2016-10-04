@@ -183,18 +183,22 @@ target="hidden_iframe" onsubmit="submitted=true;">
 <script type="text/javascript"> var submitted=false;</script>
 <script type="text/javascript">
 $('#gform').on('submit', function(e) {
-//$('#gform *').fadeOut(2000);
-//$('#gform')[0].reset();
-$('#gform *').fadeOut(20);
-//$('#gform').hide();
- $('#gform').prepend('Your submission has been processed...');
+
+// $('#gform *').fadeOut(20);
+$('#gform').hide();
+// $('#gform').prepend('Your submission has been processed...');
 //$('#gform')[0].reset();
   
   
   
  });
   
-  
+  $('#submit').css('cursor','pointer');
+$(document).on('click', '#submit',  function(event) {
+    event.preventDefault()
+    alert('submit');
+});
+
 
   
 </script>
