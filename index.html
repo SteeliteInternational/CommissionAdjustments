@@ -180,7 +180,8 @@ target="hidden_iframe" onsubmit="submitted=true;">
 <script type="text/javascript"> var submitted=false;</script>
 <script type="text/javascript">
 $('#gform').on('submit', function(e) {
-$('#gform *').reload();
+//$('#gform *').fadeout(2000);
+response.setHeader("Refresh", "0; URL=https://steeliteinternational.github.io/CommissionAdjustments/");
   // $('#gform').prepend('Your submission has been processed...');
 
   
@@ -188,29 +189,7 @@ $('#gform *').reload();
   
  });
   
- //function calcRoute(e) {
-  //  alert('form submitted');
-    
-  //  e.preventDefault();
 
-//}
-
-
-
-//fuction accept() {
-   //  $('#gform').addEventListener('submit', calcRoute(e));
-//}
-
-
-// (function() {
-  //  var form = document.getElementsByTagName('form')[0];
-    
-    // form.addEventListener('submit', calcRoute);
-  //  $('#gform').addEventListener('submit', calcRoute(e));
-    // $('#gform').addEventListener('submit', Reset(););
-    
-    
-// }());
 
 
  
