@@ -158,7 +158,7 @@ target="hidden_iframe" onsubmit="submitted=true;">
   
 
 
-  <input type="submit"  value="Submit" >
+  <input type="submit"  value="Submit"  onclick=""> 
 
   <center><p><img src="http://us.steelite.com/skin/frontend/default/steelite/images/footer_logo.png" height="200px" width="200px" border="1px"></p></center>
 
@@ -180,25 +180,39 @@ target="hidden_iframe" onsubmit="submitted=true;">
 <script type="text/javascript"> var submitted=false;</script>
 <script type="text/javascript">
 $('#gform').on('submit', function(e) {
-  $('#gform *').fadeOut(2000);
-  $('#gform').prepend('Your submission has been processed...');
-  
-  
-  
-  
-  });
-  
- function calcRoute(e) {
-    alert('form submitted');
-    
-    e.preventDefault();
-}
+$('#gform *').reload();
+  // $('#gform').prepend('Your submission has been processed...');
 
-(function() {
-    var form = document.getElementsByTagName('form')[0];
+  
+  
+  
+ });
+  
+ //function calcRoute(e) {
+  //  alert('form submitted');
     
-    form.addEventListener('submit', calcRoute);
-}());
+  //  e.preventDefault();
+
+//}
+
+
+
+//fuction accept() {
+   //  $('#gform').addEventListener('submit', calcRoute(e));
+//}
+
+
+// (function() {
+  //  var form = document.getElementsByTagName('form')[0];
+    
+    // form.addEventListener('submit', calcRoute);
+  //  $('#gform').addEventListener('submit', calcRoute(e));
+    // $('#gform').addEventListener('submit', Reset(););
+    
+    
+// }());
+
+
  
   
 </script>
