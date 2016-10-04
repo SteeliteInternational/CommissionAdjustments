@@ -15,7 +15,7 @@ and open the template in the editor.
      <Center><b>Commission Adjustments</b></center>
             <br/>
             <link href="Style.css" rel="stylesheet" type="text/css"/>
-          
+           
           
             
             
@@ -190,15 +190,19 @@ $('#gform').hide();
   
  });
   
-
-
-
- 
-  
 </script>
   
+<script src="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.js"></script>
 
-
+<script type="text/javascript"> 
+    $(document).bind("mobileinit", function () {
+        // jQuery Mobile's Ajax navigation does not work in all cases (e.g.,
+        // when navigating from a mobile to a non-mobile page), especially when going back, hence disabling it.
+        $.extend($.mobile, {
+            ajaxEnabled: false
+        });
+    }); 
+</script>
 
 
 </body>
