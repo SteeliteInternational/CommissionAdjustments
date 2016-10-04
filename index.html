@@ -30,7 +30,7 @@ and open the template in the editor.
     </section>
     
     
-    
+        <p id="demo"> </p>
     
 
      
@@ -161,12 +161,14 @@ target="hidden_iframe" onsubmit="submitted=true;">
 
   <button id="myBtn">Submit</button>
 
-  
+
 
   <center><p><img src="http://us.steelite.com/skin/frontend/default/steelite/images/footer_logo.png" height="200px" width="200px" border="1px"></p></center>
 
   
   </div>
+  
+
 
 <!--
  <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
@@ -185,7 +187,9 @@ target="hidden_iframe" onsubmit="submitted=true;">
 document.getElementById("myBtn").onclick = hide;
 
 function hide() {
-    $('#gform').hide();
+  $('#gform').hide();
+  
+   document.getElementById("demo").innerHTML = "Thank you for submitting!"
 }
  
  </script>
