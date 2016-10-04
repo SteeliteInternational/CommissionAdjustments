@@ -9,6 +9,10 @@
  * REM units mixin with PX fallback for legacy browsers with no REM unit support
  * https://github.com/christopher-ramirez/remixings
  */
+
+cursor: pointer;
+cursor: auto;
+
 .hide {
   display: none;
 }
