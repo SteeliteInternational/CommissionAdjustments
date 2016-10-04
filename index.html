@@ -14,8 +14,7 @@ and open the template in the editor.
     <meta name="theme-color" content="#157878">
      <Center><b>Commission Adjustments</b></center>
             <br/>
-            <link href="Style.css" rel="stylesheet" type="text/css"/>
-          
+
           
             
             
@@ -156,9 +155,12 @@ target="hidden_iframe" onsubmit="submitted=true;">
   
   <div>
   
+  <input type="submit"  value="Submit"  > 
 
 
-  <input type="submit"  value="Submit"  onclick="myFunction();"> 
+  
+
+  
 
   <center><p><img src="http://us.steelite.com/skin/frontend/default/steelite/images/footer_logo.png" height="200px" width="200px" border="1px"></p></center>
 
@@ -179,86 +181,21 @@ target="hidden_iframe" onsubmit="submitted=true;">
 <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 <script type="text/javascript"> var submitted=false;</script>
 <script type="text/javascript">
-//$('#gform').on('submit', function(e) {
-//$('#gform').hide();
-  // $('#gform').prepend('Your submission has been processed...');
+$('#gform').on('submit', function(e) {
+// $('#gform *').fadeOut(20);
+$('#gform').hide();
+// $('#gform').prepend('Your submission has been processed...');
+//$('#gform')[0].reset();
   
   
   
+ });
   
 
-
-function myFunction() {
- //  var form = document.getElementsByTagName('form')[0];
- //  $('#gform').addEventListener('submit', $('#gform').hide());
- 
- $(document).ready(function () {
-  init();
-  $(document).click(function (e) {
-    fire(e);
-  });
-});
-
-function fire(e) { alert('hi'); }
-
-function touchHandler(event)
-{
-    var touches = event.changedTouches,
-        first = touches[0],
-        type = "";
-
-    switch(event.type)
-    {
-       case "touchstart": type = "mousedown"; break;
-       case "touchmove":  type = "mousemove"; break;        
-       case "touchend":   type = "mouseup"; break;
-       default: return;
-    }
-
-    //initMouseEvent(type, canBubble, cancelable, view, clickCount, 
-    //           screenX, screenY, clientX, clientY, ctrlKey, 
-    //           altKey, shiftKey, metaKey, button, relatedTarget);
-
-    var simulatedEvent = document.createEvent("MouseEvent");
-    simulatedEvent.initMouseEvent(type, true, true, window, 1, 
-                          first.screenX, first.screenY, 
-                          first.clientX, first.clientY, false, 
-                          false, false, false, 0/*left*/, null);
-
-    first.target.dispatchEvent(simulatedEvent);
-    event.preventDefault();
-}
-
-function init() 
-{
-    document.addEventListener("touchstart", touchHandler, true);
-    document.addEventListener("touchmove", touchHandler, true);
-    document.addEventListener("touchend", touchHandler, true);
-    document.addEventListener("touchcancel", touchHandler, true);    
-}
-
-}
-
-
-//fuction accept() {
-   //  $('#gform').addEventListener('submit', calcRoute(e));
-//}
-
-(function() {
-   var form = document.getElementsByTagName('form')[0];
-    
-    // form.addEventListener('submit', calcRoute);
-    $('#gform').addEventListener('submit', hide());
-    // $('#gform').addEventListener('submit', Reset(););
-    
-    
- }());
-
-
- 
   
 </script>
   
+
 
 
 
