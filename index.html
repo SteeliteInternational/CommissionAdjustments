@@ -182,13 +182,9 @@ target="hidden_iframe" onsubmit="submitted=true;">
 $('#gform').on('submit', function(e) {
 //$('#gform *').fadeout(2000);
 //$('#gform')[0].reset();
-  $('div').click(function(){
-   alert("Hello.....");
-  });
-
-});
-
-
+event.preventDefault();
+$('#gform').hide();
+//  $('#gform').prepend('Your submission has been processed...');
 //$('#gform')[0].reset();
   
   
@@ -200,7 +196,7 @@ $('#gform').on('submit', function(e) {
   
 </script>
   
-<script src="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.js"></script>
+
 
 
 
