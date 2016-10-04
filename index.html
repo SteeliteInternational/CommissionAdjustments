@@ -7,14 +7,14 @@ and open the template in the editor.
 <html>
     
 <head>
-
+         <meta charset="UTF-8">
          <title> Commission Adjustments </title>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     
-
+    <meta name="theme-color" content="#157878">
      <Center><b>Commission Adjustments</b></center>
             <br/>
-
+       <link href="Style.css" rel="stylesheet" type="text/css"/>
            
           
             
@@ -159,10 +159,10 @@ target="hidden_iframe" onsubmit="submitted=true;">
 
 
 
-  <button id="myBtn">Submit</button>
+<input type="submit" value="Submit" onClick="window.location.reload()">
 
 
-
+  <center><p><img src="http://us.steelite.com/skin/frontend/default/steelite/images/footer_logo.png" height="200px" width="200px" border="1px"></p></center>
 
   
   </div>
@@ -172,8 +172,6 @@ target="hidden_iframe" onsubmit="submitted=true;">
 <!--
  <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
 -->
-
-
 
             </form>
     
@@ -186,9 +184,9 @@ target="hidden_iframe" onsubmit="submitted=true;">
 document.getElementById("myBtn").onclick = hide;
 
 function hide() {
-  $('#gform').hide();
+  //$('#gform').hide();
   
-   document.getElementById("demo").innerHTML = "Thank you for submitting!"
+   document.getElementById("demo").innerHTML = "Thank you for submitting"
 }
  
  </script>
